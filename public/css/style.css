@@ -1,0 +1,140 @@
+:root {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.navegacion {
+    background-color: #232B31;
+    min-height: 5rem;
+}
+
+.navegacion a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header a {
+    color: white;
+    font-size: 1.6rem;
+}
+
+header a:hover {
+    color: #63ACA1;
+}
+
+header p {
+    margin-bottom: 0px;
+    color: #63ACA1;
+    font-size: 1.6rem;
+}
+
+.listado-iconos {
+    background-color: #f4f4f4;
+    font-family: 'Jost', sans-serif;
+}
+
+.listado-iconos img {
+    width: 50%;
+}
+
+.listado-iconos p {
+    color: #9C9FA3;
+}
+
+h1,
+h2 {
+    color: #63ACA1;
+}
+
+.sobre-sinertics p {
+    line-height: 30px;
+    color: #9C9FA3;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+}
+
+.compromiso-clientes {
+    background-color: #f4f4f4;
+    font-family: 'Jost', sans-serif;
+}
+
+.compromiso-clientes img {
+    width: 50%;
+}
+
+.compromiso-clientes p {
+    color: #9C9FA3;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #232B31;
+}
+
+footer a,
+p {
+    color: white;
+}
+
+footer a:hover {
+    color: #63ACA1;
+}
+
+
+/* ICONO WHATSAPP */
+
+i.fab.fa-whatsapp {
+    font-size: 4rem;
+    color: green;
+}
+
+.alert {
+    color: white;
+    background-color: rgb(241, 110, 110);
+}
+
+.servicios-ti img {
+    width: 40%;
+}
+
+.slider {
+    background: linear-gradient(rgba(165, 166, 182, 0.9), rgba(100, 108, 116, 0.4)), url(../img/slider3.jpg);
+    /*  background-image: url(../img/slider3.jpg); */
+    min-height: 400px;
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.home {
+    position: relative;
+}
+
+.home .navegacion {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid white;
+}

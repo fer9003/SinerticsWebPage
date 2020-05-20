@@ -1,0 +1,18 @@
+
+.navegacion
+  nav.nav-principal.navbar.navbar-expand-md.navbar-light.bg-faded
+    button.navbar-toggler.mb-4(type='button', data-toggle='collapse', data-target='#nav_principal', aria-label='Navegacion')
+      span.navbar-toggler-icon
+    a.navbar-brand.text-light.mx-5(href='/') SinerTics
+    .container
+      #nav_principal.collapse.navbar-collapse
+        ul.nav.justify-content-end.w-100.flex-column.flex-sm-row
+          li.nav-item
+            a.nav-link(href='/nosotros', class=(ruta ==='/nosotros' ? 'active' : '')) Nosotros
+          li.nav-item
+            a.nav-link(href='/servicios', class=(ruta === '/servicios' ? 'active' : '')) Servicios
+          li.nav-item
+            a.nav-link(href='/productos', class=(ruta === '/productos' ? 'active' : '')) Productos
+          li.nav-item
+            a.nav-link(href='/contacto', class=(ruta === '/contacto' ? 'active' : '')) Contacto
+       

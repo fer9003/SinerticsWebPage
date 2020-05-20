@@ -1,0 +1,20 @@
+extends ../layout/index
+block contenido
+    main.container.mt-5.producto
+        .row
+            .col-md-6
+                img(src=`/img/${producto.imagen}.jpg`, class = "img-fluid" , alt="")
+            .col-md-5.text-center
+                .card
+                    h1 #{producto.nombre}
+                    p 
+                    i.fas.fa-dollar-sign
+                    |  #{producto.precio}
+                        
+                    p
+                    | Caracteristicas:  #{producto.descripcionlarga}
+                
+                    p
+                    a(target= '_blank', href="https://api.whatsapp.com/send?phone=593982329366&text=Estoy%20interesado%20en%20este%20producto,%20se%20encuentra%20disponible?")
+                        i.fab.fa-whatsapp  
+                        h3.text-dark.mt-2 Pidelo

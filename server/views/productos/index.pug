@@ -1,0 +1,16 @@
+extends ../layout/index
+block contenido
+    main.container.sobre-sinertics.mt-5
+         h1.text-center.mb-3 #{pagina}
+         .row.productos
+            each producto in productos
+                .col-md-6.col-lg-4.mb-4
+                    .card
+                        img(src=`img/${producto.imagen}.jpg`, class= "img-fluid", alt="")
+                        .card-body
+                            h2= producto.nombre
+                            p
+                                i.fas.fa-dollar-sign
+                                | #{producto.precio}
+                            p #{producto.descripcion}
+                            a(href=`productos/${producto.id}`, class="btn btn-success btn-block") Mas informacion

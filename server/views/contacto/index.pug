@@ -1,0 +1,25 @@
+extends ../layout/index
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 #{pagina}
+        .row
+            .col-md-12
+                if(errores)
+                    each error in errores
+                        .alert.alter-danger.text-center=error.mensaje
+        .row.justify-content-center
+            .col-md-8
+                form(action='/contacto', method='POST')  
+                    .form-group
+                        label(for="nombre") Nombre
+                        input( id= "nombre", class="form-control", type="text", placeholder="Tú Nombre", name="nombre", value=nombre)
+                    .form-group
+                        label(for="correo") Correo Electrónico
+                        input( id= "correo", class="form-control", type="email", placeholder="Tú Correo Electrónico", name="correo", value=correo)
+                    .form-group
+                        label(for="celular") Celular
+                        input( id= "celular", class="form-control", type="text", placeholder="Tú Número de Celular", name="celular", value= celular)
+                    .form-group
+                        label(for="mensaje") Mensaje
+                        textarea#mensaje(name="mensaje", class="form-control" rows="3",placeholder="Tú mensaje")=mensaje
+                    input.btn.btn-success.btn-block(type="submit", value="Enviar")    
