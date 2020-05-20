@@ -138,3 +138,7 @@ i.fab.fa-whatsapp {
 .nav-link.active {
     border-bottom: 3px solid white;
 }
+
+.navbar-light .navbar-toggler {
+    background-color: #ffffff;
+}
